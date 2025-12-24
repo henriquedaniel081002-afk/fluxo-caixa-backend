@@ -71,4 +71,8 @@ def save_data(payload: dict, session: Session = Depends(get_session)):
 @app.get("/ping")
 def ping():
     return {"pong": True}
+@app.get("/ping")
+def ping():
+    return {"pong": True}
+
 
